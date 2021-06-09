@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LaVitrola" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=LaVitrola;Integrated Security=True" SettingsObjectName="La_Vitrola_App.Properties.Settings" SettingsPropertyName="LaVitrolaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Autor" Member="Autors">
+    <Type Name="Autor">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="Autor_Album" Member="Albums" ThisKey="Id" OtherKey="Id_Autor" Type="Album" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Setting" Member="Settings">
+    <Type Name="Setting">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Variable" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Valor" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dispositivo" Member="Dispositivos">
+    <Type Name="Dispositivo">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IP" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="MAC" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Ultimo_Acceso" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Contador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Dispositivo_Dispositivo_Musica" Member="Dispositivo_Musicas" ThisKey="Id" OtherKey="Id_Dispositivo" Type="Dispositivo_Musica" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dispositivo_Musica" Member="Dispositivo_Musicas">
+    <Type Name="Dispositivo_Musica">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nomb_Musica" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Id_Dispositivo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Dispositivo_Dispositivo_Musica" Member="Dispositivo" ThisKey="Id_Dispositivo" OtherKey="Id" Type="Dispositivo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Musica" Member="Musicas">
+    <Type Name="Musica">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre_Cancion" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Id_Album" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Musica_PlayList_Musica" Member="PlayList_Musicas" ThisKey="Id" OtherKey="Id_Musica" Type="PlayList_Musica" />
+      <Association Name="Album_Musica" Member="Album" ThisKey="Id_Album" OtherKey="Id" Type="Album" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlayList" Member="PlayLists">
+    <Type Name="PlayList">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Activa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="PlayList_PlayList_Musica" Member="PlayList_Musicas" ThisKey="Id" OtherKey="Id_PlayList" Type="PlayList_Musica" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlayList_Musica" Member="PlayList_Musicas">
+    <Type Name="PlayList_Musica">
+      <Column Name="Id_PlayList" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id_Musica" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="De_Cliente" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Fecha_Insertada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Musica_PlayList_Musica" Member="Musica" ThisKey="Id_Musica" OtherKey="Id" Type="Musica" IsForeignKey="true" />
+      <Association Name="PlayList_PlayList_Musica" Member="PlayList" ThisKey="Id_PlayList" OtherKey="Id" Type="PlayList" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Album" Member="Albums">
+    <Type Name="Album">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Id_Autor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Album_Musica" Member="Musicas" ThisKey="Id" OtherKey="Id_Album" Type="Musica" />
+      <Association Name="Autor_Album" Member="Autor" ThisKey="Id_Autor" OtherKey="Id" Type="Autor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.D_DesactivarMusica" Method="D_DesactivarMusica">
+    <Parameter Name="Id_Musica" Parameter="id_Musica" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

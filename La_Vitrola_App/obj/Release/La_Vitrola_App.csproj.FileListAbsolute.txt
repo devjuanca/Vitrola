@@ -1,0 +1,38 @@
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\bin\Release\La_Vitrola_App.exe.config
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\Interop.WMPLib.dll
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\AxInterop.WMPLib.dll
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.csproj.ResolveComReference.cache
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\bin\Release\La_Vitrola_App.exe
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\bin\Release\La_Vitrola_App.pdb
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\bin\Release\Interop.WMPLib.dll
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\bin\Release\AxInterop.WMPLib.dll
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Elegir_Lista.resources
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Eliminar_Lista.resources
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Indexar.resources
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.LaVitrola.resources
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Modificar_Lista.resources
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Nueva_Lista.resources
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Properties.Resources.resources
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.csproj.GenerateResource.Cache
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.exe
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.pdb
+C:\Users\Juanca\Documents\Visual Studio 2015\Projects\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.csprojResolveAssemblyReference.cache
+H:\La_Vitrola_App\La_Vitrola_App\bin\Release\La_Vitrola_App.exe.config
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\Interop.WMPLib.dll
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\AxInterop.WMPLib.dll
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.csproj.ResolveComReference.cache
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.exe
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.pdb
+H:\La_Vitrola_App\La_Vitrola_App\bin\Release\La_Vitrola_App.exe
+H:\La_Vitrola_App\La_Vitrola_App\bin\Release\La_Vitrola_App.pdb
+H:\La_Vitrola_App\La_Vitrola_App\bin\Release\Interop.WMPLib.dll
+H:\La_Vitrola_App\La_Vitrola_App\bin\Release\AxInterop.WMPLib.dll
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.csprojResolveAssemblyReference.cache
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Elegir_Lista.resources
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Eliminar_Lista.resources
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Indexar.resources
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.LaVitrola.resources
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Modificar_Lista.resources
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Nueva_Lista.resources
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.Properties.Resources.resources
+H:\La_Vitrola_App\La_Vitrola_App\obj\Release\La_Vitrola_App.csproj.GenerateResource.Cache

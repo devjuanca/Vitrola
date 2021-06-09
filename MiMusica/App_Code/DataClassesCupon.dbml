@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Control_Cupones" Class="DataClassesCuponDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=Control_Cupones;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Control_CuponesConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cupon" Member="Cupons">
+    <Type Name="Cupon">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descuento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Distribuidor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha_Expedido" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Numero" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Valido_Hasta" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Estado_Cupon" Member="Estado1" ThisKey="Estado" OtherKey="Id" Type="Estado" IsForeignKey="true" />
+      <Association Name="Distribuidor_Cupon" Member="Distribuidor1" ThisKey="Distribuidor" OtherKey="Id" Type="Distribuidor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estado" Member="Estados">
+    <Type Name="Estado">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Estado_Cupon" Member="Cupons" ThisKey="Id" OtherKey="Estado" Type="Cupon" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Distribuidor" Member="Distribuidors">
+    <Type Name="Distribuidor">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Distribuidor_Cupon" Member="Cupons" ThisKey="Id" OtherKey="Distribuidor" Type="Cupon" />
+    </Type>
+  </Table>
+</Database>
